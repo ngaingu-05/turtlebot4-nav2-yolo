@@ -1,0 +1,70 @@
+{
+  "message_counts": {
+    "scan": 164,
+    "tf": 360,
+    "tf_static": 4,
+    "amcl_pose": 4,
+    "odom": 154,
+    "cmd_vel": 187,
+    "sim_ground_truth_pose": 132,
+    "yolo/detections/image": 25,
+    "oakd/rgb/preview/image_raw": 69,
+    "map": 1
+  },
+  "wall_duration_s": 15.009902531999955,
+  "map": {
+    "status": "PASS",
+    "width": 604,
+    "height": 304,
+    "resolution": 0.05000000074505806
+  },
+  "amcl_pose": {
+    "status": "PASS"
+  },
+  "scan": {
+    "status": "PASS",
+    "rays": 640,
+    "finite_valid": 446,
+    "minimum": 0.8703206777572632,
+    "maximum": 11.986480712890625
+  },
+  "odom": {
+    "status": "PASS"
+  },
+  "tf": {
+    "status": "PASS"
+  },
+  "tf_static": {
+    "status": "PASS"
+  },
+  "cmd_vel": {
+    "status": "PASS"
+  },
+  "oakd/rgb/preview/image_raw": {
+    "status": "PASS",
+    "width": 320,
+    "height": 240,
+    "encoding": "rgb8",
+    "data_bytes": 230400
+  },
+  "yolo/detections/image": {
+    "status": "PASS",
+    "width": 320,
+    "height": 240,
+    "encoding": "bgr8",
+    "data_bytes": 230400
+  },
+  "map_to_base_link": {
+    "status": "PASS",
+    "x": -0.9834980039745042,
+    "y": 0.04105309299375963
+  },
+  "lifecycle": {
+    "amcl": "active",
+    "map_server": "active",
+    "planner_server": "active",
+    "controller_server": "active",
+    "bt_navigator": "active",
+    "collision_monitor": "active"
+  }
+}

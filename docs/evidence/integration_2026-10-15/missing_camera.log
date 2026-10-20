@@ -1,0 +1,2 @@
+[INFO] [1792026657.786159071] [missing_camera_test]: [YOLO] Model loaded on CPU; subscribing to /test/nonexistent_camera
+[WARN] [1792026662.782701856] [missing_camera_test]: [YOLO] No recent RGB frames. Check camera topic, bridge and Gazebo.

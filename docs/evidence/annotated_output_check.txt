@@ -1,0 +1,1 @@
+PASS annotated live image received (320, 240, 'bgr8', 'oakd_rgb_camera_optical_frame')

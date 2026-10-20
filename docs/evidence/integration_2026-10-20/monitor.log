@@ -1,0 +1,1 @@
+MONITOR {'odom': 2912, 'tf': 6186, 'sim_ground_truth_pose': 2610, 'oakd/rgb/preview/image_raw': 1422, 'scan': 2919, 'amcl_pose': 55, 'yolo/detections/image': 329, 'cmd_vel': 2224}

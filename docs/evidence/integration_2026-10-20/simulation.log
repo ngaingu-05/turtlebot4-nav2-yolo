@@ -1,0 +1,460 @@
+[INFO] [launch]: All log files can be found below /home/nghia/.ros/log/2026-10-20-17-47-15-218355-nghia-Modern-14-C7M-6256
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [6261]
+[INFO] [robot_state_publisher-2]: process started with pid [6262]
+[INFO] [joint_state_publisher-3]: process started with pid [6263]
+[INFO] [robot_state_publisher-4]: process started with pid [6265]
+[INFO] [static_transform_publisher-5]: process started with pid [6266]
+[INFO] [create-6]: process started with pid [6267]
+[INFO] [create-7]: process started with pid [6268]
+[INFO] [parameter_bridge-8]: process started with pid [6269]
+[INFO] [parameter_bridge-9]: process started with pid [6270]
+[INFO] [parameter_bridge-10]: process started with pid [6273]
+[INFO] [parameter_bridge-11]: process started with pid [6276]
+[INFO] [parameter_bridge-12]: process started with pid [6277]
+[INFO] [parameter_bridge-13]: process started with pid [6278]
+[INFO] [parameter_bridge-14]: process started with pid [6279]
+[INFO] [parameter_bridge-15]: process started with pid [6282]
+[INFO] [parameter_bridge-16]: process started with pid [6283]
+[INFO] [parameter_bridge-17]: process started with pid [6284]
+[INFO] [parameter_bridge-18]: process started with pid [6285]
+[INFO] [parameter_bridge-19]: process started with pid [6286]
+[INFO] [parameter_bridge-20]: process started with pid [6291]
+[INFO] [parameter_bridge-21]: process started with pid [6292]
+[INFO] [parameter_bridge-22]: process started with pid [6293]
+[INFO] [parameter_bridge-23]: process started with pid [6294]
+[INFO] [parameter_bridge-24]: process started with pid [6295]
+[INFO] [parameter_bridge-25]: process started with pid [6296]
+[INFO] [parameter_bridge-26]: process started with pid [6297]
+[INFO] [parameter_bridge-27]: process started with pid [6303]
+[INFO] [parameter_bridge-28]: process started with pid [6305]
+[INFO] [turtlebot4_node-29]: process started with pid [6306]
+[INFO] [turtlebot4_gz_hmi_node-30]: process started with pid [6318]
+[INFO] [spawner-31]: process started with pid [6323]
+[INFO] [hazards_vector_publisher-32]: process started with pid [6331]
+[INFO] [ir_intensity_vector_publisher-33]: process started with pid [6352]
+[INFO] [motion_control-34]: process started with pid [6361]
+[INFO] [wheel_status_publisher-35]: process started with pid [6368]
+[INFO] [mock_publisher-36]: process started with pid [6377]
+[INFO] [robot_state-37]: process started with pid [6385]
+[INFO] [kidnap_estimator_publisher-38]: process started with pid [6387]
+[INFO] [ui_mgr-39]: process started with pid [6388]
+[INFO] [pose_republisher_node-40]: process started with pid [6393]
+[INFO] [sensors_node-41]: process started with pid [6400]
+[INFO] [interface_buttons_node-42]: process started with pid [6403]
+[INFO] [static_transform_publisher-43]: process started with pid [6408]
+[INFO] [static_transform_publisher-44]: process started with pid [6423]
+[INFO] [parameter_bridge-45]: process started with pid [6426]
+[INFO] [rviz2-46]: process started with pid [6442]
+[static_transform_publisher-5] [WARN] [1792493236.224271768] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-5] [INFO] [1792493236.388303649] [tf_odom_std_dock_link_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.157000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '1.000000', '0.000000')
+[static_transform_publisher-5] from 'odom' to 'std_dock_link'
+[create-6] [INFO] [1792493236.376487013] [ros_gz_sim]: Requesting list of world names.
+[create-7] [INFO] [1792493236.361550072] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-18] [INFO] [1792493236.413131504] [ir_intensity_front_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_front_left/sensor/ir_intensity_front_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_front_left/sensor/ir_intensity_front_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[robot_state_publisher-2] [WARN] [1792493236.423028251] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1792493236.423335642] [robot_state_publisher]: Robot initialized
+[robot_state_publisher-4] [WARN] [1792493236.430142896] [kdl_parser]: The root link std_dock_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-4] [INFO] [1792493236.430302027] [dock_state_publisher]: Robot initialized
+[parameter_bridge-15] [INFO] [1792493236.430166955] [cliff_side_right_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/base_link/sensor/cliff_side_right/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/base_link/sensor/cliff_side_right/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-8] [INFO] [1792493236.430702036] [cmd_vel_bridge]: Creating GZ->ROS Bridge: [/cmd_vel (ignition.msgs.Twist) -> /cmd_vel (geometry_msgs/msg/TwistStamped)] (Lazy 0)
+[parameter_bridge-8] [INFO] [1792493236.442285200] [cmd_vel_bridge]: Creating ROS->GZ Bridge: [/model/turtlebot4/cmd_vel (geometry_msgs/msg/TwistStamped) -> /model/turtlebot4/cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[static_transform_publisher-43] [WARN] [1792493236.466826356] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-44] [WARN] [1792493236.483864903] []: Old-style arguments are deprecated; see --help for new-style arguments
+[parameter_bridge-23] [INFO] [1792493236.543132725] [buttons_msg_bridge]: Creating GZ->ROS Bridge: [/create3_buttons (ignition.msgs.Int32) -> /create3_buttons (std_msgs/msg/Int32)] (Lazy 0)
+[parameter_bridge-22] [INFO] [1792493236.550204173] [ir_intensity_side_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_side_left/sensor/ir_intensity_side_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_side_left/sensor/ir_intensity_side_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-11] [INFO] [1792493236.700905528] [bumper_contact_bridge]: Creating GZ->ROS Bridge: [/bumper_contact (ignition.msgs.Contacts) -> /bumper_contact (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-12] [INFO] [1792493236.725570144] [cliff_front_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/base_link/sensor/cliff_front_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/base_link/sensor/cliff_front_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[hazards_vector_publisher-32] [INFO] [1792493236.783373046] [hazards_vector_publisher]: Advertised topic: hazard_detection
+[hazards_vector_publisher-32] [INFO] [1792493236.824950925] [hazards_vector_publisher]: Subscription to topic: _internal/bumper/event
+[hazards_vector_publisher-32] [INFO] [1792493236.865177274] [hazards_vector_publisher]: Subscription to topic: _internal/cliff_front_left/event
+[hazards_vector_publisher-32] [INFO] [1792493236.906480989] [hazards_vector_publisher]: Subscription to topic: _internal/cliff_front_right/event
+[hazards_vector_publisher-32] [INFO] [1792493236.909340998] [hazards_vector_publisher]: Subscription to topic: _internal/cliff_side_left/event
+[hazards_vector_publisher-32] [INFO] [1792493236.914945782] [hazards_vector_publisher]: Subscription to topic: _internal/cliff_side_right/event
+[hazards_vector_publisher-32] [INFO] [1792493236.925862199] [hazards_vector_publisher]: Subscription to topic: _internal/wheel_drop/left_wheel/event
+[parameter_bridge-13] [INFO] [1792493236.962805424] [cliff_front_right_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/base_link/sensor/cliff_front_right/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/base_link/sensor/cliff_front_right/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[hazards_vector_publisher-32] [INFO] [1792493236.978016618] [hazards_vector_publisher]: Subscription to topic: _internal/wheel_drop/right_wheel/event
+[hazards_vector_publisher-32] [INFO] [1792493236.980653626] [hazards_vector_publisher]: Subscription to topic: _internal/backup_limit
+[parameter_bridge-20] [INFO] [1792493237.020626632] [ir_intensity_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_left/sensor/ir_intensity_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_left/sensor/ir_intensity_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-14] [INFO] [1792493237.097028857] [cliff_side_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/base_link/sensor/cliff_side_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/base_link/sensor/cliff_side_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.146140311] [ir_intensity_vector_publisher]: Advertised topic: ir_intensity
+[parameter_bridge-45] [INFO] [1792493237.147432949] [clock_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.151023543] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_front_center_left
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.153006449] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_front_center_right
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.155259624] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_front_left
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.155978670] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_front_right
+[static_transform_publisher-43] [INFO] [1792493237.158817861] [rplidar_stf]: Spinning until stopped - publishing transform
+[static_transform_publisher-43] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-43] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-43] from 'rplidar_link' to 'turtlebot4/rplidar_link/rplidar'
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.165865377] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_left
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.166595737] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_right
+[ir_intensity_vector_publisher-33] [INFO] [1792493237.167299683] [ir_intensity_vector_publisher]: Subscription to topic: _internal/ir_intensity_side_left
+[parameter_bridge-10] [INFO] [1792493237.185924420] [odom_base_tf_bridge]: Creating GZ->ROS Bridge: [/model/turtlebot4/tf (ignition.msgs.Pose_V) -> /model/turtlebot4/tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[robot_state-37] [INFO] [1792493237.232841930] [robot_state]: Advertised topic: battery_state
+[parameter_bridge-27] [INFO] [1792493237.237811757] [lidar_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/rplidar_link/sensor/rplidar/scan (gz.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/rplidar_link/sensor/rplidar/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-9] [INFO] [1792493237.245365308] [pose_bridge]: Creating GZ->ROS Bridge: [/model/turtlebot4/pose (ignition.msgs.Pose_V) -> /model/turtlebot4/pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[robot_state-37] [INFO] [1792493237.248398833] [robot_state]: Subscription to topic: dock_status
+[ui_mgr-39] [INFO] [1792493237.255844034] [ui_mgr]: Subscription to topic: cmd_lightring
+[ui_mgr-39] [INFO] [1792493237.264256796] [ui_mgr]: Subscription to topic: cmd_audio
+[parameter_bridge-21] [INFO] [1792493237.284808697] [ir_intensity_right_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_right/sensor/ir_intensity_right/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_right/sensor/ir_intensity_right/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[robot_state-37] [INFO] [1792493237.319257469] [robot_state]: Advertised topic: stop_status
+[parameter_bridge-9] [INFO] [1792493237.333975473] [pose_bridge]: Creating GZ->ROS Bridge: [/model/standard_dock/pose (ignition.msgs.Pose_V) -> /model/standard_dock/pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-24] [INFO] [1792493237.346424911] [hmi_display_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/display/raw (std_msgs/msg/String) -> /hmi/display/raw (gz.msgs.StringMsg)] (Lazy 0)
+[parameter_bridge-19] [INFO] [1792493237.348853531] [ir_intensity_front_right_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_front_right/sensor/ir_intensity_front_right/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_front_right/sensor/ir_intensity_front_right/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-17] [INFO] [1792493237.360738225] [ir_intensity_front_center_right_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_front_center_right/sensor/ir_intensity_front_center_right/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_front_center_right/sensor/ir_intensity_front_center_right/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[robot_state-37] [INFO] [1792493237.375340414] [robot_state]: Subscription to topic: odom
+[kidnap_estimator_publisher-38] [INFO] [1792493237.398828163] [kidnap_estimator_publisher]: Advertised topic: kidnap_status
+[kidnap_estimator_publisher-38] [INFO] [1792493237.400401660] [kidnap_estimator_publisher]: Subscription to topic: hazard_detection
+[turtlebot4_node-29] [INFO] [1792493237.399153261] [turtlebot4_node]: Init Turtlebot4 Node Main
+[parameter_bridge-26] [INFO] [1792493237.404130423] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/power (std_msgs/msg/Int32) -> /hmi/led/power (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-24] [INFO] [1792493237.407919970] [hmi_display_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/display/selected (std_msgs/msg/Int32) -> /hmi/display/selected (gz.msgs.Int32)] (Lazy 0)
+[mock_publisher-36] [INFO] [1792493237.429673886] [mock_publisher]: Advertised mocked topic: slip_status
+[static_transform_publisher-44] [INFO] [1792493237.437892474] [camera_stf]: Spinning until stopped - publishing transform
+[static_transform_publisher-44] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-44] rotation: ('0.499952', '-0.500000', '0.500000', '0.500048')
+[static_transform_publisher-44] from 'oakd_rgb_camera_optical_frame' to 'turtlebot4/oakd_rgb_camera_frame/rgbd_camera'
+[parameter_bridge-26] [INFO] [1792493237.444070569] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/motors (std_msgs/msg/Int32) -> /hmi/led/motors (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-16] [INFO] [1792493237.451578888] [ir_intensity_front_center_left_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/ir_intensity_front_center_left/sensor/ir_intensity_front_center_left/scan (ignition.msgs.LaserScan) -> /world/depot/model/turtlebot4/link/ir_intensity_front_center_left/sensor/ir_intensity_front_center_left/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[wheel_status_publisher-35] [INFO] [1792493237.461517050] [wheel_status_publisher]: Advertised topic: wheel_vels
+[parameter_bridge-26] [INFO] [1792493237.477802228] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/comms (std_msgs/msg/Int32) -> /hmi/led/comms (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-25] [INFO] [1792493237.479835246] [hmi_buttons_msg_bridge]: Creating GZ->ROS Bridge: [/hmi/buttons (gz.msgs.Int32) -> /hmi/buttons (std_msgs/msg/Int32)] (Lazy 0)
+[parameter_bridge-26] [INFO] [1792493237.501524662] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/wifi (std_msgs/msg/Int32) -> /hmi/led/wifi (gz.msgs.Int32)] (Lazy 0)
+[wheel_status_publisher-35] [INFO] [1792493237.506329064] [wheel_status_publisher]: Advertised topic: wheel_ticks
+[parameter_bridge-26] [INFO] [1792493237.516100418] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/battery (std_msgs/msg/Int32) -> /hmi/led/battery (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-26] [INFO] [1792493237.555826229] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/user1 (std_msgs/msg/Int32) -> /hmi/led/user1 (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-28] [INFO] [1792493237.642017344] [camera_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/image (gz.msgs.Image) -> /world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-26] [INFO] [1792493237.672975004] [hmi_led_msg_bridge]: Creating ROS->GZ Bridge: [/hmi/led/user2 (std_msgs/msg/Int32) -> /hmi/led/user2 (gz.msgs.Int32)] (Lazy 0)
+[parameter_bridge-28] [INFO] [1792493237.685574757] [camera_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/depth_image (gz.msgs.Image) -> /world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[motion_control-34] [INFO] [1792493237.712055668] [motion_control]: Enabling REFLEX_BUMP
+[motion_control-34] [INFO] [1792493237.712427982] [motion_control]: Enabling REFLEX_CLIFF
+[parameter_bridge-28] [INFO] [1792493237.715956230] [camera_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/points (gz.msgs.PointCloudPacked) -> /world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[motion_control-34] [INFO] [1792493237.733282627] [motion_control]: Enabling REFLEX_STUCK
+[motion_control-34] [INFO] [1792493237.736185066] [motion_control]: Enabling REFLEX_WHEEL_DROP
+[create-7] [INFO] [1792493237.744202838] [ros_gz_sim]: Waiting messages on topic [standard_dock_description].
+[parameter_bridge-28] [INFO] [1792493237.820691008] [camera_bridge]: Creating GZ->ROS Bridge: [/world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/camera_info (gz.msgs.CameraInfo) -> /world/depot/model/turtlebot4/link/oakd_rgb_camera_frame/sensor/rgbd_camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[joint_state_publisher-3] [INFO] [1792493237.863984576] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[spawner-31] [INFO] [1792493237.873272931] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[joint_state_publisher-3] [INFO] [1792493237.897810717] [joint_state_publisher]: Got description, configuring robot
+[turtlebot4_node-29] [INFO] [1792493237.903031723] [turtlebot4_node]: Buttons Init
+[create-7] [INFO] [1792493237.914390832] [ros_gz_sim]: Entity creation successful.
+[turtlebot4_node-29] [INFO] [1792493237.914400692] [turtlebot4_node]: Init Display
+[create-6] [INFO] [1792493237.924702390] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[turtlebot4_node-29] [INFO] [1792493237.929928486] [turtlebot4_node]: Leds Init
+[create-6] [INFO] [1792493237.944806935] [ros_gz_sim]: Entity creation successful.
+[turtlebot4_node-29] [INFO] [1792493237.961396971] [turtlebot4_node]: Turtlebot4 standard running.
+[parameter_bridge-26] [INFO] [1792493238.012025591] [hmi_led_msg_bridge]: Passing message from ROS std_msgs/msg/Int32 to Gazebo gz.msgs.Int32 (showing msg only once per type)
+[parameter_bridge-24] [INFO] [1792493238.012153000] [hmi_display_msg_bridge]: Passing message from ROS std_msgs/msg/Int32 to Gazebo gz.msgs.Int32 (showing msg only once per type)
+[parameter_bridge-24] [INFO] [1792493238.012226910] [hmi_display_msg_bridge]: Passing message from ROS std_msgs/msg/String to Gazebo gz.msgs.StringMsg (showing msg only once per type)
+[rviz2-46] [INFO] [1792493238.059363468] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-46] [INFO] [1792493238.059494754] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-46] [INFO] [1792493238.102379077] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [create-7]: process has finished cleanly [pid 6268]
+[INFO] [create-6]: process has finished cleanly [pid 6267]
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot4"]/joint[@name="wheel_drop_left_joint"]/physics/ode/provide_feedback:<urdf-string>:L0]: XML Element[provide_feedback], child of element[ode], not defined in SDF. Copying[provide_feedback] as children of [ode].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot4"]/joint[@name="wheel_drop_right_joint"]/physics/ode/provide_feedback:<urdf-string>:L0]: XML Element[provide_feedback], child of element[ode], not defined in SDF. Copying[provide_feedback] as children of [ode].
+[gazebo-1] [INFO] [1792493239.171357878] [gz_ros_control]: [gz_ros2_control] Fixed joint ['bumper_joint'] (Entity='131') is skipped.
+[gazebo-1] [INFO] [1792493239.171510228] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_caster_joint'] (Entity='132') is skipped.
+[gazebo-1] [INFO] [1792493239.171518404] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_left_bottom_weight_block_joint'] (Entity='133') is skipped.
+[gazebo-1] [INFO] [1792493239.171524407] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_left_top_weight_block_joint'] (Entity='134') is skipped.
+[gazebo-1] [INFO] [1792493239.171529557] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_right_bottom_weight_block_joint'] (Entity='135') is skipped.
+[gazebo-1] [INFO] [1792493239.171534367] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_right_top_weight_block_joint'] (Entity='136') is skipped.
+[gazebo-1] [INFO] [1792493239.171539768] [gz_ros_control]: [gz_ros2_control] Fixed joint ['imu_joint'] (Entity='137') is skipped.
+[gazebo-1] [INFO] [1792493239.171544017] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_front_center_left_joint'] (Entity='138') is skipped.
+[gazebo-1] [INFO] [1792493239.171548887] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_front_center_right_joint'] (Entity='139') is skipped.
+[gazebo-1] [INFO] [1792493239.171554187] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_front_left_joint'] (Entity='140') is skipped.
+[gazebo-1] [INFO] [1792493239.171559719] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_front_right_joint'] (Entity='141') is skipped.
+[gazebo-1] [INFO] [1792493239.171564538] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_left_joint'] (Entity='142') is skipped.
+[gazebo-1] [INFO] [1792493239.171571503] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_right_joint'] (Entity='143') is skipped.
+[gazebo-1] [INFO] [1792493239.171578797] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_intensity_side_left_joint'] (Entity='144') is skipped.
+[gazebo-1] [INFO] [1792493239.171585190] [gz_ros_control]: [gz_ros2_control] Fixed joint ['ir_omni_joint'] (Entity='145') is skipped.
+[gazebo-1] [INFO] [1792493239.171591173] [gz_ros_control]: [gz_ros2_control] Fixed joint ['mouse_joint'] (Entity='146') is skipped.
+[gazebo-1] [INFO] [1792493239.171597305] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_left_tower_standoff_joint'] (Entity='147') is skipped.
+[gazebo-1] [INFO] [1792493239.171604039] [gz_ros_control]: [gz_ros2_control] Fixed joint ['front_right_tower_standoff_joint'] (Entity='148') is skipped.
+[gazebo-1] [INFO] [1792493239.171610532] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_camera_bracket_joint'] (Entity='149') is skipped.
+[gazebo-1] [INFO] [1792493239.171616775] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_joint'] (Entity='150') is skipped.
+[gazebo-1] [INFO] [1792493239.171622887] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_imu_joint'] (Entity='151') is skipped.
+[gazebo-1] [INFO] [1792493239.171628408] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_left_camera_joint'] (Entity='152') is skipped.
+[gazebo-1] [INFO] [1792493239.171635132] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_left_camera_optical_joint'] (Entity='153') is skipped.
+[gazebo-1] [INFO] [1792493239.171642046] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_rgb_camera_joint'] (Entity='154') is skipped.
+[gazebo-1] [INFO] [1792493239.171649271] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_rgb_camera_optical_joint'] (Entity='155') is skipped.
+[gazebo-1] [INFO] [1792493239.171655944] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_right_camera_joint'] (Entity='156') is skipped.
+[gazebo-1] [INFO] [1792493239.171662718] [gz_ros_control]: [gz_ros2_control] Fixed joint ['oakd_right_camera_optical_joint'] (Entity='157') is skipped.
+[gazebo-1] [INFO] [1792493239.171669622] [gz_ros_control]: [gz_ros2_control] Fixed joint ['rear_left_tower_standoff_joint'] (Entity='158') is skipped.
+[gazebo-1] [INFO] [1792493239.171676216] [gz_ros_control]: [gz_ros2_control] Fixed joint ['rear_right_tower_standoff_joint'] (Entity='159') is skipped.
+[gazebo-1] [INFO] [1792493239.171683040] [gz_ros_control]: [gz_ros2_control] Fixed joint ['rplidar_joint'] (Entity='160') is skipped.
+[gazebo-1] [INFO] [1792493239.171689102] [gz_ros_control]: [gz_ros2_control] Fixed joint ['tower_sensor_plate_joint'] (Entity='161') is skipped.
+[gazebo-1] [INFO] [1792493239.174851218] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1792493239.212071029] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-1] [WARN] [1792493239.212152053] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-1] [INFO] [1792493239.229819445] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1792493239.229940061] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [INFO] [1792493240.198714751] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1792493240.198871511] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-1] [INFO] [1792493240.209092052] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1792493240.209160351] [gz_ros_control]: Loading joint: left_wheel_joint
+[gazebo-1] [INFO] [1792493240.209168588] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792493240.209176124] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792493240.209180843] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792493240.209188709] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792493240.209193038] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792493240.209279054] [gz_ros_control]: Loading sensor: imu
+[gazebo-1] [INFO] [1792493240.209288182] [gz_ros_control]: 	State:
+[gazebo-1] [WARN] [1792493240.209292782] [gz_ros_control]: IMU sensor 'imu' not found in hardware_info, skipping.
+[gazebo-1] [INFO] [1792493240.209389499] [controller_manager]: Initialize hardware 'left_wheel_controller' 
+[gazebo-1] [WARN] [1792493240.209407335] [controller_manager.hardware_component.system.left_wheel_controller]: Executor is not available during hardware component initialization for 'left_wheel_controller'. Skipping node creation!
+[gazebo-1] [INFO] [1792493240.209470374] [controller_manager]: Successful initialization of hardware 'left_wheel_controller'
+[gazebo-1] [INFO] [1792493240.209543703] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1792493240.209557983] [gz_ros_control]: Loading joint: right_wheel_joint
+[gazebo-1] [INFO] [1792493240.209562311] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792493240.209566330] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792493240.209570228] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792493240.209574356] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792493240.209577813] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792493240.209586892] [gz_ros_control]: Loading sensor: imu
+[gazebo-1] [INFO] [1792493240.209591150] [gz_ros_control]: 	State:
+[gazebo-1] [WARN] [1792493240.209594708] [gz_ros_control]: IMU sensor 'imu' not found in hardware_info, skipping.
+[gazebo-1] [INFO] [1792493240.209610971] [controller_manager]: Initialize hardware 'right_wheel_controller' 
+[gazebo-1] [WARN] [1792493240.209617434] [controller_manager.hardware_component.system.right_wheel_controller]: Executor is not available during hardware component initialization for 'right_wheel_controller'. Skipping node creation!
+[gazebo-1] [INFO] [1792493240.209629168] [controller_manager]: Successful initialization of hardware 'right_wheel_controller'
+[gazebo-1] [INFO] [1792493240.209681815] [controller_manager]: Activating component 'right_wheel_controller'.
+[gazebo-1] [INFO] [1792493240.209716165] [resource_manager]: 'configure' hardware 'right_wheel_controller' 
+[gazebo-1] [INFO] [1792493240.209721346] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1792493240.209725735] [resource_manager]: Successful 'configure' of hardware 'right_wheel_controller'
+[gazebo-1] [INFO] [1792493240.209732419] [resource_manager]: 'activate' hardware 'right_wheel_controller' 
+[gazebo-1] [INFO] [1792493240.209746317] [resource_manager]: Successful 'activate' of hardware 'right_wheel_controller'
+[gazebo-1] [INFO] [1792493240.209821400] [controller_manager]: Activating component 'left_wheel_controller'.
+[gazebo-1] [INFO] [1792493240.209826671] [resource_manager]: 'configure' hardware 'left_wheel_controller' 
+[gazebo-1] [INFO] [1792493240.209829306] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1792493240.209833595] [resource_manager]: Successful 'configure' of hardware 'left_wheel_controller'
+[gazebo-1] [INFO] [1792493240.209852083] [resource_manager]: 'activate' hardware 'left_wheel_controller' 
+[gazebo-1] [INFO] [1792493240.209855259] [resource_manager]: Successful 'activate' of hardware 'left_wheel_controller'
+[gazebo-1] [WARN] [1792493240.209872154] [controller_manager]: Component 'right_wheel_controller' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [WARN] [1792493240.209880290] [controller_manager]: Component 'left_wheel_controller' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [INFO] [1792493240.209885431] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] [ERROR] [1792493241.418215899] [gz_ros_control]: Desired controller update period (0.001 s) is faster than the gazebo simulation period (0.003 s).
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot4"]/joint[@name="wheel_drop_left_joint"]/physics/ode/provide_feedback:<data-string>:L2056]: XML Element[provide_feedback], child of element[ode], not defined in SDF. Copying[provide_feedback] as children of [ode].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot4"]/joint[@name="wheel_drop_right_joint"]/physics/ode/provide_feedback:<data-string>:L2177]: XML Element[provide_feedback], child of element[ode], not defined in SDF. Copying[provide_feedback] as children of [ode].
+[gazebo-1] [INFO] [1792493242.339126878] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1792493242.339213546] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [WARN] [1792493242.376193370] [controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[gazebo-1] [INFO] [1792493242.376276681] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /opt/ros/jazzy/share/irobot_create_control/config/control.yaml --ros-args --remap ~/odom:=odom --remap /tf:=tf --remap /tf_static:=tf_static --remap /diagnostics:=diagnostics -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-31] [WARN] [1792493252.337417938] [spawner_joint_state_broadcaster]: Failed getting a result from calling /controller_manager/load_controller in 10.0. (Attempt 1 of 3.)
+[gazebo-1] [INFO] [1792493253.139873241] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1792493253.139947176] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [ERROR] [1792493253.141808444] [controller_manager]: A controller named 'joint_state_broadcaster' was already loaded inside the controller manager
+[spawner-31] [FATAL] [1792493253.143371159] [spawner_joint_state_broadcaster]: Failed loading controller joint_state_broadcaster
+[parameter_bridge-8] [INFO] [1792493253.151824710] [cmd_vel_bridge]: Passing message from ROS geometry_msgs/msg/TwistStamped to Gazebo gz.msgs.Twist (showing msg only once per type)
+[turtlebot4_node-29] [INFO] [1792493253.271275204] [turtlebot4_node]: OAKD stopped
+[turtlebot4_node-29] [INFO] [1792493253.271330119] [turtlebot4_node]: RPLIDAR stopped
+[ERROR] [spawner-31]: process has died [pid 6323, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster -c controller_manager --controller-manager-timeout 30 --ros-args -r __ns:=/'].
+[INFO] [spawner-47]: process started with pid [7727]
+[motion_control-34] [INFO] [1792493253.771478963] [motion_control]: E-Stop request: Set system E-Stop off, enabling motor power
+[spawner-47] [INFO] [1792493254.247795526] [spawner_diffdrive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-47] [INFO] [1792493257.626986478] [spawner_diffdrive_controller]: Setting controller param "params_file" to "['/opt/ros/jazzy/share/irobot_create_control/config/control.yaml']" for diffdrive_controller
+[gazebo-1] [INFO] [1792493257.644264232] [controller_manager]: Loading controller : 'diffdrive_controller' of type 'diff_drive_controller/DiffDriveController'
+[gazebo-1] [INFO] [1792493257.644341004] [controller_manager]: Loading controller 'diffdrive_controller'
+[gazebo-1] [WARN] [1792493257.658899045] [controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[gazebo-1] [INFO] [1792493257.658994575] [controller_manager]: Controller 'diffdrive_controller' node arguments: --ros-args --params-file /opt/ros/jazzy/share/irobot_create_control/config/control.yaml --ros-args --remap ~/odom:=odom --remap /tf:=tf --remap /tf_static:=tf_static --remap /diagnostics:=diagnostics -p use_sim_time:=true --params-file /opt/ros/jazzy/share/irobot_create_control/config/control.yaml --param use_sim_time:=true 
+[spawner-47] [INFO] [1792493257.867991851] [spawner_diffdrive_controller]: Loaded diffdrive_controller
+[gazebo-1] [INFO] [1792493257.958383621] [controller_manager]: Configuring controller: 'diffdrive_controller'
+[gazebo-1] [WARN] [1792493257.958790205] [diffdrive_controller]: [deprecated] has_jerk_limits parameter is deprecated, instead set the respective limits to NAN
+[gazebo-1] [WARN] [1792493257.958829507] [diffdrive_controller]: [deprecated] has_jerk_limits parameter is deprecated, instead set the respective limits to NAN
+[gazebo-1] [INFO] [1792493258.084459218] [controller_manager]: Activating controllers: [ diffdrive_controller ]
+[gazebo-1] [WARN] [1792493258.092886222] [diffdrive_controller]: Can't accept new commands. subscriber is inactive
+[gazebo-1] [INFO] [1792493258.099559237] [controller_manager]: Successfully switched controllers!
+[spawner-47] [INFO] [1792493258.104041314] [spawner_diffdrive_controller]: Configured and activated diffdrive_controller
+[motion_control-34] [INFO] [1792493258.409932867] [motion_control]: Received new undock goal
+[gazebo-1] [WARN] [1792493258.420027539] [diffdrive_controller]: Received TwistStamped with zero timestamp, setting it to current time, this message will only be shown once
+[INFO] [spawner-47]: process has finished cleanly [pid 7727]
+[turtlebot4_node-29] [INFO] [1792493259.314935988] [turtlebot4_node]: OAKD started
+[turtlebot4_node-29] [INFO] [1792493259.315020325] [turtlebot4_node]: RPLIDAR started
+[rviz2-46] [INFO] [1792493272.800597657] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [rviz2-46]: process has finished cleanly [pid 6442]
+[turtlebot4_node-29] [ERROR] [1792493283.281874078] [turtlebot4_node]: Service stop_motor unavailable.
+[turtlebot4_node-29] [ERROR] [1792493283.292252953] [turtlebot4_node]: Service oakd/stop_camera unavailable.
+[turtlebot4_node-29] [ERROR] [1792493289.325332957] [turtlebot4_node]: Service start_motor unavailable.
+[turtlebot4_node-29] [ERROR] [1792493289.335705105] [turtlebot4_node]: Service oakd/start_camera unavailable.
+[motion_control-34] [INFO] [1792493294.763079409] [motion_control]: Undock Goal Succeeded
+[gazebo-1] [WARN] [1792493297.650766966] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493301.971263063] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493306.857481573] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493312.527413421] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493316.887734311] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493323.980229140] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493471.048759248] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.5010000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.050877265] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493471.129155018] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.5280000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.281071537] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.5520000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.338501272] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.5760000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.482407956] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.6030000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.550862453] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.6270000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.653749869] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.6510000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.814328358] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.6780000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.915930253] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.7020000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493471.982967067] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.7260000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.052701605] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.7530000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.186716506] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.7770000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.323580996] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.8010000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.437112176] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.8280000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.520077067] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.8520000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.602346343] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.8760000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.794848326] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.9000000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.896597904] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.9270000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493472.990524145] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.9480000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.068813514] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 0.9780000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.229616755] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.0020000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.322555149] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.0260000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.411894116] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.0500000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.522950667] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.0770000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.583557876] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.1010000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.738690065] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.1280000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.813333318] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.1520000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493473.971886986] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.1760000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.132877061] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.2030000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.317484720] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.2270000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.345424003] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.2510000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.454897409] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.2780000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.547138544] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.3020000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.666170040] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.3260000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.787394823] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.3530000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.861788497] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.3770000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493474.978648390] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.4010000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493475.089538826] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.4310000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493475.153959552] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.4490000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493475.320643907] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.4760000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493475.404203823] [diffdrive_controller]: Ignoring the received message (timestamp 43.8240000000) because it is older than the current time by 1.5030000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493475.405787454] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493481.049425214] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493485.278841549] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493490.014658863] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493494.435357218] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493498.077512036] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493502.512895832] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493506.344112657] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493510.204054598] [diffdrive_controller]: Ignoring the received message (timestamp 53.2020000000) because it is older than the current time by 0.5010000000 seconds, which exceeds the allowed timeout (0.5000)
+[gazebo-1] [WARN] [1792493510.207242013] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493513.999581006] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493517.620122194] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493521.354851753] [diffdrive_controller]: Velocity command timed out. Braking.
+[gazebo-1] [WARN] [1792493525.056450819] [diffdrive_controller]: Velocity command timed out. Braking.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[sensors_node-41] [INFO] [1792493528.227623709] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[motion_control-34] [INFO] [1792493528.227652870] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[turtlebot4_gz_hmi_node-30] [INFO] [1792493528.227679626] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ui_mgr-39] [INFO] [1792493528.227736836] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-23] [INFO] [1792493528.227848519] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[pose_republisher_node-40] [INFO] [1792493528.227881759] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[interface_buttons_node-42] [INFO] [1792493528.227953248] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[hazards_vector_publisher-32] [INFO] [1792493528.228207219] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-21] [INFO] [1792493528.228241371] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-4] [INFO] [1792493528.228286776] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-17] [INFO] [1792493528.228339135] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-8] [INFO] [1792493528.228348996] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-43] [INFO] [1792493528.228361271] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-11] [INFO] [1792493528.228934200] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-25] [INFO] [1792493528.228935152] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-12] [INFO] [1792493528.229157597] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[turtlebot4_node-29] [INFO] [1792493528.229177969] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[wheel_status_publisher-35] [INFO] [1792493528.229235901] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1792493528.229315146] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-19] [INFO] [1792493528.229410516] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-16] [INFO] [1792493528.229426489] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[kidnap_estimator_publisher-38] [INFO] [1792493528.229462474] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state-37] [INFO] [1792493528.229783365] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-14] [INFO] [1792493528.230021133] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-24] [INFO] [1792493528.230045283] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-45] [INFO] [1792493528.230175956] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-27] [INFO] [1792493528.230176327] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-5] [INFO] [1792493528.230286608] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-22] [INFO] [1792493528.230333346] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-44] [INFO] [1792493528.230350151] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-9] [INFO] [1792493528.230548415] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-10] [INFO] [1792493528.230721447] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-28] [INFO] [1792493528.231080087] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-13] [INFO] [1792493528.231399967] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-20] [INFO] [1792493528.231969357] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-18] [INFO] [1792493528.232735940] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-15] [INFO] [1792493528.233739569] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[mock_publisher-36] [INFO] [1792493528.233773009] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-26] [INFO] [1792493528.233771867] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ir_intensity_vector_publisher-33] [INFO] [1792493528.234311596] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-45]: sending signal 'SIGINT' to process[parameter_bridge-45]
+[INFO] [static_transform_publisher-44]: sending signal 'SIGINT' to process[static_transform_publisher-44]
+[INFO] [parameter_bridge-20]: process has finished cleanly [pid 6291]
+[INFO] [static_transform_publisher-43]: sending signal 'SIGINT' to process[static_transform_publisher-43]
+[INFO] [parameter_bridge-25]: process has finished cleanly [pid 6296]
+[INFO] [parameter_bridge-21]: process has finished cleanly [pid 6292]
+[INFO] [interface_buttons_node-42]: sending signal 'SIGINT' to process[interface_buttons_node-42]
+[INFO] [parameter_bridge-15]: process has finished cleanly [pid 6282]
+[ERROR] [static_transform_publisher-44]: process has died [pid 6423, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher 0 0 0 1.5707 -1.5707 0 oakd_rgb_camera_optical_frame turtlebot4/oakd_rgb_camera_frame/rgbd_camera --ros-args -r __node:=camera_stf -r __ns:=/ -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [parameter_bridge-23]: process has finished cleanly [pid 6294]
+[INFO] [parameter_bridge-27]: process has finished cleanly [pid 6303]
+[INFO] [sensors_node-41]: sending signal 'SIGINT' to process[sensors_node-41]
+[INFO] [parameter_bridge-22]: process has finished cleanly [pid 6293]
+[INFO] [parameter_bridge-18]: process has finished cleanly [pid 6285]
+[INFO] [pose_republisher_node-40]: sending signal 'SIGINT' to process[pose_republisher_node-40]
+[ERROR] [static_transform_publisher-43]: process has died [pid 6408, exit code -2, cmd '/opt/ros/jazzy/lib/tf2_ros/static_transform_publisher 0 0 0 0 0 0.0 rplidar_link turtlebot4/rplidar_link/rplidar --ros-args -r __node:=rplidar_stf -r __ns:=/ -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [parameter_bridge-17]: process has finished cleanly [pid 6284]
+[ERROR] [interface_buttons_node-42]: process has died [pid 6403, exit code -2, cmd '/opt/ros/jazzy/lib/irobot_create_gz_toolbox/interface_buttons_node --ros-args -r __node:=interface_buttons_node -r __ns:=/ --params-file /tmp/launch_params_z_qbq0fl'].
+[INFO] [parameter_bridge-14]: process has finished cleanly [pid 6279]
+[INFO] [ui_mgr-39]: sending signal 'SIGINT' to process[ui_mgr-39]
+[INFO] [parameter_bridge-19]: process has finished cleanly [pid 6286]
+[INFO] [parameter_bridge-16]: process has finished cleanly [pid 6283]
+[INFO] [kidnap_estimator_publisher-38]: sending signal 'SIGINT' to process[kidnap_estimator_publisher-38]
+[INFO] [robot_state-37]: sending signal 'SIGINT' to process[robot_state-37]
+[INFO] [parameter_bridge-8]: process has finished cleanly [pid 6269]
+[INFO] [parameter_bridge-24]: process has finished cleanly [pid 6295]
+[INFO] [mock_publisher-36]: sending signal 'SIGINT' to process[mock_publisher-36]
+[INFO] [parameter_bridge-9]: process has finished cleanly [pid 6270]
+[INFO] [parameter_bridge-12]: process has finished cleanly [pid 6277]
+[INFO] [parameter_bridge-26]: process has finished cleanly [pid 6297]
+[INFO] [parameter_bridge-11]: process has finished cleanly [pid 6276]
+[INFO] [wheel_status_publisher-35]: sending signal 'SIGINT' to process[wheel_status_publisher-35]
+[INFO] [parameter_bridge-10]: process has finished cleanly [pid 6273]
+[INFO] [motion_control-34]: sending signal 'SIGINT' to process[motion_control-34]
+[ERROR] [mock_publisher-36]: process has died [pid 6377, exit code -2, cmd '/opt/ros/jazzy/lib/irobot_create_nodes/mock_publisher --ros-args -r __node:=mock_publisher -r __ns:=/ --params-file /opt/ros/jazzy/share/irobot_create_common_bringup/config/mock_params.yaml --params-file /tmp/launch_params__qg007yk'].
+[INFO] [ir_intensity_vector_publisher-33]: sending signal 'SIGINT' to process[ir_intensity_vector_publisher-33]
+[INFO] [parameter_bridge-13]: process has finished cleanly [pid 6278]
+[INFO] [hazards_vector_publisher-32]: sending signal 'SIGINT' to process[hazards_vector_publisher-32]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 6262]
+[INFO] [parameter_bridge-28]: process has finished cleanly [pid 6305]
+[INFO] [turtlebot4_gz_hmi_node-30]: sending signal 'SIGINT' to process[turtlebot4_gz_hmi_node-30]
+[ERROR] [hazards_vector_publisher-32]: process has died [pid 6331, exit code -2, cmd '/opt/ros/jazzy/lib/irobot_create_nodes/hazards_vector_publisher --ros-args -r __node:=hazards_vector_publisher -r __ns:=/ --params-file /opt/ros/jazzy/share/irobot_create_common_bringup/config/hazard_vector_params.yaml --params-file /tmp/launch_params_m8s97jdx'].
+[INFO] [turtlebot4_node-29]: sending signal 'SIGINT' to process[turtlebot4_node-29]
+[INFO] [pose_republisher_node-40]: process has finished cleanly [pid 6393]
+[ERROR] [turtlebot4_node-29]: process has died [pid 6306, exit code -2, cmd '/opt/ros/jazzy/lib/turtlebot4_node/turtlebot4_node --ros-args -r __node:=turtlebot4_node -r __ns:=/ --params-file /opt/ros/jazzy/share/turtlebot4_gz_bringup/config/turtlebot4_node.yaml --params-file /tmp/launch_params_em5m89x5'].
+[INFO] [joint_state_publisher-3]: process has finished cleanly [pid 6263]
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 6266]
+[INFO] [robot_state-37]: process has finished cleanly [pid 6385]
+[INFO] [ir_intensity_vector_publisher-33]: process has finished cleanly [pid 6352]
+[INFO] [sensors_node-41]: process has finished cleanly [pid 6400]
+[INFO] [kidnap_estimator_publisher-38]: process has finished cleanly [pid 6387]
+[INFO] [wheel_status_publisher-35]: process has finished cleanly [pid 6368]
+[INFO] [robot_state_publisher-4]: sending signal 'SIGINT' to process[robot_state_publisher-4]
+[INFO] [gazebo-1]: sending signal 'SIGINT' to process[gazebo-1]
+[parameter_bridge-25] Failed to delete datawriter, at ./src/publisher.cpp:45 during '__function__'
+[sensors_node-41] [INFO] [1792493528.670118235] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ui_mgr-39] [INFO] [1792493528.692489741] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[pose_republisher_node-40] [INFO] [1792493528.701879588] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[kidnap_estimator_publisher-38] [INFO] [1792493528.713218341] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state-37] [INFO] [1792493528.716938942] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[wheel_status_publisher-35] [INFO] [1792493528.760993896] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[motion_control-34] [INFO] [1792493528.789232162] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ir_intensity_vector_publisher-33] [INFO] [1792493528.800470535] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[turtlebot4_gz_hmi_node-30] [INFO] [1792493528.844294997] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-4] [INFO] [1792493529.081540532] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[gazebo-1] [INFO] [1792493529.377009702] [controller_manager.pal_statistics]: Async messages lost 0
+[gazebo-1] [INFO] [1792493529.377068234] [controller_manager.pal_statistics]: publish_async_failures_ 0
+[gazebo-1] [INFO] [1792493529.917848309] [controller_manager.pal_statistics]: Async messages lost 0
+[gazebo-1] [INFO] [1792493529.917888082] [controller_manager.pal_statistics]: publish_async_failures_ 1
+[ERROR] [gazebo-1]: process has died [pid 6261, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim depot.sdf -r --render-engine-server ogre2 --force-version 8'].
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 6265]
+[INFO] [turtlebot4_gz_hmi_node-30]: process has finished cleanly [pid 6318]
+[INFO] [ui_mgr-39]: process has finished cleanly [pid 6388]
+[INFO] [motion_control-34]: process has finished cleanly [pid 6361]
+[ERROR] [parameter_bridge-45]: process[parameter_bridge-45] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [parameter_bridge-45]: sending signal 'SIGTERM' to process[parameter_bridge-45]
+[ERROR] [parameter_bridge-45]: process has died [pid 6426, exit code -11, cmd '/opt/ros/jazzy/lib/ros_gz_bridge/parameter_bridge /clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock --ros-args -r __node:=clock_bridge'].

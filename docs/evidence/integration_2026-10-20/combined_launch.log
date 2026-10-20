@@ -1,0 +1,89 @@
+[INFO] [launch]: All log files can be found below /home/nghia/.ros/log/2026-10-20-17-48-40-398452-nghia-Modern-14-C7M-8064
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [navigation_node.py-1]: process started with pid [8070]
+[INFO] [yolo_detection_node.py-2]: process started with pid [8071]
+[navigation_node.py-1] [INFO] [1792493322.045076698] [navigation_node]: [NAV] Waiting for Nav2... Set 2D Pose Estimate in RViz and undock.
+[yolo_detection_node.py-2] [INFO] [1792493324.897006533] [yolo_detection_node]: [YOLO] Model loaded on CPU; subscribing to /oakd/rgb/preview/image_raw
+[yolo_detection_node.py-2] [INFO] [1792493326.122315221] [yolo_detection_node]: [YOLO] 0 detections
+[navigation_node.py-1] [INFO] [1792493328.532696818] [navigation_node]: [NAV] Nav2 active
+[navigation_node.py-1] [INFO] [1792493328.533301209] [navigation_node]: [NAV] Navigating to Goal 1
+[yolo_detection_node.py-2] [INFO] [1792493328.740363317] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493331.920508163] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493335.072145367] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493338.130432278] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493341.070085912] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493344.086973372] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493347.492886162] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493350.568983624] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493353.615592453] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493356.514256420] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493359.531359932] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493362.587380356] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493365.536347611] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493368.557449991] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493371.545499868] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493374.528978047] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493377.532502051] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493380.531010863] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493383.526757694] [yolo_detection_node]: [YOLO] 0 detections
+[navigation_node.py-1] [INFO] [1792493384.490029046] [navigation_node]: [NAV] Goal 1 succeeded
+[navigation_node.py-1] [INFO] [1792493384.490487815] [navigation_node]: [NAV] Navigating to Goal 2
+[yolo_detection_node.py-2] [INFO] [1792493386.519717883] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493389.545623630] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493392.531108349] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493395.566943736] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493398.542103310] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493401.541966644] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493404.542696963] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493407.569153281] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493410.546295246] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493413.585109927] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493416.543722020] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493419.546049854] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493422.594581558] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493425.581706156] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493428.589092257] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493431.563960626] [yolo_detection_node]: [YOLO] 0 detections
+[navigation_node.py-1] [INFO] [1792493433.688223337] [navigation_node]: [NAV] Goal 2 succeeded
+[navigation_node.py-1] [INFO] [1792493433.688707145] [navigation_node]: [NAV] Navigating to Goal 3
+[yolo_detection_node.py-2] [INFO] [1792493434.559258139] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493437.579207882] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493440.576414323] [yolo_detection_node]: [YOLO] 0 detections
+[yolo_detection_node.py-2] [INFO] [1792493443.577653394] [yolo_detection_node]: [YOLO] umbrella 0.62
+[yolo_detection_node.py-2] [INFO] [1792493446.560167633] [yolo_detection_node]: [YOLO] chair 0.57
+[yolo_detection_node.py-2] [INFO] [1792493449.598412341] [yolo_detection_node]: [YOLO] chair 0.69
+[yolo_detection_node.py-2] [INFO] [1792493452.612042147] [yolo_detection_node]: [YOLO] chair 0.66
+[yolo_detection_node.py-2] [INFO] [1792493455.603918643] [yolo_detection_node]: [YOLO] chair 0.74, suitcase 0.48
+[yolo_detection_node.py-2] [INFO] [1792493458.571852194] [yolo_detection_node]: [YOLO] chair 0.60
+[yolo_detection_node.py-2] [INFO] [1792493461.580135437] [yolo_detection_node]: [YOLO] chair 0.81
+[yolo_detection_node.py-2] [INFO] [1792493464.603741781] [yolo_detection_node]: [YOLO] chair 0.81
+[yolo_detection_node.py-2] [INFO] [1792493467.593259620] [yolo_detection_node]: [YOLO] chair 0.86
+[navigation_node.py-1] [INFO] [1792493468.343933969] [navigation_node]: [NAV] Goal 3 succeeded
+[navigation_node.py-1] [INFO] [1792493468.344259379] [navigation_node]: [NAV] All navigation goals completed successfully
+[INFO] [navigation_node.py-1]: process has finished cleanly [pid 8070]
+[yolo_detection_node.py-2] [INFO] [1792493470.692715559] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493473.692114628] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493476.705724110] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493479.859770843] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493482.855717596] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493485.894596585] [yolo_detection_node]: [YOLO] chair 0.84
+[yolo_detection_node.py-2] [INFO] [1792493488.908862636] [yolo_detection_node]: [YOLO] chair 0.84
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [yolo_detection_node.py-2]: sending signal 'SIGINT' to process[yolo_detection_node.py-2]
+[yolo_detection_node.py-2] Traceback (most recent call last):
+[yolo_detection_node.py-2]   File "/home/nghia/turtlebot4/install/tb4_simulation_lab/lib/tb4_simulation_lab/yolo_detection_node.py", line 148, in <module>
+[yolo_detection_node.py-2]     sys.exit(main())
+[yolo_detection_node.py-2]              ^^^^^^
+[yolo_detection_node.py-2]   File "/home/nghia/turtlebot4/install/tb4_simulation_lab/lib/tb4_simulation_lab/yolo_detection_node.py", line 141, in main
+[yolo_detection_node.py-2]     node.destroy_node()
+[yolo_detection_node.py-2]   File "/home/nghia/turtlebot4/install/tb4_simulation_lab/lib/tb4_simulation_lab/yolo_detection_node.py", line 124, in destroy_node
+[yolo_detection_node.py-2]     return super().destroy_node()
+[yolo_detection_node.py-2]            ^^^^^^^^^^^^^^^^^^^^^^
+[yolo_detection_node.py-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 1956, in destroy_node
+[yolo_detection_node.py-2]     self.destroy_publisher(self._publishers[0])
+[yolo_detection_node.py-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 1836, in destroy_publisher
+[yolo_detection_node.py-2]     publisher.destroy()
+[yolo_detection_node.py-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/publisher.py", line 105, in destroy
+[yolo_detection_node.py-2]     self.__publisher.destroy_when_not_in_use()
+[yolo_detection_node.py-2] KeyboardInterrupt
+[ERROR] [yolo_detection_node.py-2]: process has died [pid 8071, exit code -2, cmd '/home/nghia/turtlebot4/install/tb4_simulation_lab/lib/tb4_simulation_lab/yolo_detection_node.py --ros-args --params-file /tmp/launch_params_m24rbzw8 --params-file /tmp/launch_params_o1701bao'].

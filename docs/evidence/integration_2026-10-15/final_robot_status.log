@@ -1,0 +1,14 @@
+sim_ground_truth_pose nav_msgs.msg.Odometry(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=77, nanosec=727000000), frame_id='depot'), child_frame_id='turtlebot4', pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.27954984902876556, y=0.25262695642554844, z=-0.004450035282700651), orientation=geometry_msgs.msg.Quaternion(x=-0.0016907535691423037, y=-0.0014084893770074868, z=-0.768323634507084, w=0.6400577709612377)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0.])), twist=geometry_msgs.msg.TwistWithCovariance(twist=geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0.])))
+dock_status irobot_create_msgs.msg.DockStatus(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=77, nanosec=700000000), frame_id=''), dock_visible=True, is_docked=False)
+wheel_status irobot_create_msgs.msg.WheelStatus(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=77, nanosec=700000000), frame_id='base_link'), current_ma_left=0, current_ma_right=0, pwm_left=0, pwm_right=0, wheels_enabled=True)
+odom nav_msgs.msg.Odometry(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=77, nanosec=715000000), frame_id='odom'), child_frame_id='base_link', pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.45074698616714637, y=-0.050776282762224824, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=-0.7898356199760793, w=0.6133185904707296)), covariance=array([0.001, 0.   , 0.   , 0.   , 0.   , 0.   , 0.   , 0.001, 0.   ,
+       0.   , 0.   , 0.   , 0.   , 0.   , 0.001, 0.   , 0.   , 0.   ,
+       0.   , 0.   , 0.   , 0.001, 0.   , 0.   , 0.   , 0.   , 0.   ,
+       0.   , 0.001, 0.   , 0.   , 0.   , 0.   , 0.   , 0.   , 0.01 ])), twist=geometry_msgs.msg.TwistWithCovariance(twist=geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=2.76236643529362e-15, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=-2.0965383553705298e-15)), covariance=array([0.001, 0.   , 0.   , 0.   , 0.   , 0.   , 0.   , 0.001, 0.   ,
+       0.   , 0.   , 0.   , 0.   , 0.   , 0.001, 0.   , 0.   , 0.   ,
+       0.   , 0.   , 0.   , 0.001, 0.   , 0.   , 0.   , 0.   , 0.   ,
+       0.   , 0.001, 0.   , 0.   , 0.   , 0.   , 0.   , 0.   , 0.01 ])))

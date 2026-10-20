@@ -1,0 +1,8 @@
+INITIAL_TRUTH geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.3512212068549374, y=-3.953834558430725e-06, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.9999953809697608, w=0.0030394142762858295))
+AMCL geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.3574795841161657, y=-0.002677262994462826, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.9999837245152725, w=0.005705322476746884)) POSITION_ERROR_METRES 0.006805429289052099
+LIFECYCLE amcl active
+LIFECYCLE map_server active
+LIFECYCLE planner_server active
+LIFECYCLE controller_server active
+LIFECYCLE bt_navigator active
+LIFECYCLE collision_monitor active

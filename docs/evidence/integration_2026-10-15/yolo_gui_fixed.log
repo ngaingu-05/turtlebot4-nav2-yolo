@@ -1,0 +1,7 @@
+[INFO] [1792026633.156432028] [yolo_gui_fixed_test]: [YOLO] Model loaded on CPU; subscribing to /oakd/rgb/preview/image_raw
+[INFO] [1792026636.918143464] [yolo_gui_fixed_test]: [YOLO] chair 0.59
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[INFO] [1792026638.905230709] [yolo_gui_fixed_test]: [YOLO] chair 0.72, suitcase 0.68, suitcase 0.41
+[INFO] [1792026642.656188590] [yolo_gui_fixed_test]: [YOLO] chair 0.65, suitcase 0.41
+[INFO] [1792026646.521046727] [yolo_gui_fixed_test]: [YOLO] chair 0.78
+[INFO] [1792026649.894018062] [yolo_gui_fixed_test]: [YOLO] chair 0.77

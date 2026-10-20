@@ -1,0 +1,15 @@
+/build/
+/install/
+/log/
+/.venv*/
+/models/
+/.vscode/
+__pycache__/
+*.py[cod]
+*.pt
+*.onnx
+*.engine
+/runs/
+*.bag
+*.db3
+*.mcap

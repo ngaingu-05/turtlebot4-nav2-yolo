@@ -1,0 +1,20 @@
+[INFO] [1792025746.820306615] [yolo_detection_node]: [YOLO] Model loaded on CPU; subscribing to /oakd/rgb/preview/image_raw
+[INFO] [1792025754.448909630] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025757.351291184] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025760.376428385] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025763.380914639] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025766.384252616] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025769.364915650] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025772.416388242] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025775.371531055] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025778.373411543] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025781.376532446] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025784.369219245] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025787.384000088] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025790.386785430] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025793.465052827] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025796.402841213] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025799.400825996] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025802.406627535] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025805.442964423] [yolo_detection_node]: [YOLO] 0 detections
+[INFO] [1792025808.425432627] [yolo_detection_node]: [YOLO] 0 detections

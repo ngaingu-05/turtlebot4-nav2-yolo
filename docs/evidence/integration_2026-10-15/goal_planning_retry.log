@@ -1,0 +1,12 @@
+INITIAL_TRUTH geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.3512484836069569, y=-3.7484197508068267e-06, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.9999956941343191, w=0.0029345719996869044))
+AMCL geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.34576305728617357, y=0.006709791735039704, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.9999693762496276, w=0.007826018331868514)) POSITION_ERROR_METRES 0.008669574576109652
+LIFECYCLE amcl active
+LIFECYCLE map_server active
+LIFECYCLE planner_server active
+LIFECYCLE controller_server active
+LIFECYCLE bt_navigator active
+LIFECYCLE collision_monitor active
+PATH_VALID {'name': 'goal_1', 'x': -2.468, 'y': 0.5029999999999992, 'yaw': 1.8925496379082833} {'goal': 1, 'path_poses': 88, 'planner_status': 4}
+PATH_VALID {'name': 'goal_2', 'x': -0.3179999999999996, 'y': 1.553, 'yaw': 0.7853987147417195} {'goal': 2, 'path_poses': 96, 'planner_status': 4}
+PATH_VALID {'name': 'goal_3', 'x': -0.34576305728617357, 'y': 0.006709791735039704, 'yaw': -1.6095378423103281} {'goal': 3, 'path_poses': 59, 'planner_status': 4}
+GOALS_CONFIGURED /home/nghia/turtlebot4/src/tb4_simulation_lab/config/navigation_goals.yaml

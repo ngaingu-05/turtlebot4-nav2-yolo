@@ -1,0 +1,2 @@
+[ERROR] [1792025703.617937815] [navigation_node]: Goal 1 unset/invalid. Collect x,y using RViz Publish Point; yaw in radians. Edit goals_file.
+[ros2run]: Process exited with failure 1

@@ -1,0 +1,2 @@
+e3ec5ba8efae64a5112069ce5561a3451b345886fd23767e662101a5b688c860  src/tb4_simulation_lab/maps/map.pgm
+146a98668d0e57474a7258998064ff312a4bcfed30af989eeda4571aa9bb231d  src/tb4_simulation_lab/maps/map.yaml

@@ -1,0 +1,2 @@
+[INFO] [1792025938.571099432] [yolo_detection_node]: [YOLO] Model loaded on CPU; subscribing to /oakd/rgb/preview/image_raw
+[INFO] [1792025951.206824189] [yolo_detection_node]: [YOLO] 0 detections

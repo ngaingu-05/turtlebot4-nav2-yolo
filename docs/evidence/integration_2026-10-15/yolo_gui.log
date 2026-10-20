@@ -1,0 +1,11 @@
+[INFO] [1792026483.054753193] [yolo_gui_test]: [YOLO] Model loaded on CPU; subscribing to /oakd/rgb/preview/image_raw
+[INFO] [1792026485.361361967] [yolo_gui_test]: [YOLO] chair 0.87
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[INFO] [1792026486.748577803] [yolo_gui_test]: [YOLO] chair 0.87
+[INFO] [1792026489.743413078] [yolo_gui_test]: [YOLO] chair 0.87
+[INFO] [1792026492.739870945] [yolo_gui_test]: [YOLO] chair 0.87
+[INFO] [1792026495.736437633] [yolo_gui_test]: [YOLO] chair 0.87
+[INFO] [1792026498.745699892] [yolo_gui_test]: [YOLO] chair 0.87
+[INFO] [1792026501.752062542] [yolo_gui_test]: [YOLO] chair 0.87
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread

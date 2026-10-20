@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/tmp/tb4_plan_test.py", line 31, in <module>
+    wait(lambda:'amcl_pose' in latest)
+  File "/tmp/tb4_plan_test.py", line 21, in wait
+    if time.monotonic()>end:raise TimeoutError(str(counts))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: {'sim_ground_truth_pose': 586, 'yolo/detections/image': 81, 'scan': 640}

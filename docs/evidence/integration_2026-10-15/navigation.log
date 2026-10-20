@@ -1,0 +1,9 @@
+[INFO] [1792026296.813226219] [navigation_node]: [NAV] Waiting for Nav2... Set 2D Pose Estimate in RViz and undock.
+[INFO] [1792026298.944503510] [navigation_node]: [NAV] Nav2 active
+[INFO] [1792026298.947529539] [navigation_node]: [NAV] Navigating to Goal 1
+[INFO] [1792026341.509845675] [navigation_node]: [NAV] Goal 1 succeeded
+[INFO] [1792026341.510313831] [navigation_node]: [NAV] Navigating to Goal 2
+[INFO] [1792026381.674374722] [navigation_node]: [NAV] Goal 2 succeeded
+[INFO] [1792026381.674837726] [navigation_node]: [NAV] Navigating to Goal 3
+[INFO] [1792026409.446794789] [navigation_node]: [NAV] Goal 3 succeeded
+[INFO] [1792026409.447726404] [navigation_node]: [NAV] All navigation goals completed successfully

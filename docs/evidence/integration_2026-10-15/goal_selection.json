@@ -1,0 +1,46 @@
+{
+  "initial_position_error_m": 0.008669574576109652,
+  "goals": [
+    {
+      "name": "goal_1",
+      "x": -2.468,
+      "y": 0.5029999999999992,
+      "yaw": 1.8925496379082833
+    },
+    {
+      "name": "goal_2",
+      "x": -0.3179999999999996,
+      "y": 1.553,
+      "yaw": 0.7853987147417195
+    },
+    {
+      "name": "goal_3",
+      "x": -0.34576305728617357,
+      "y": 0.006709791735039704,
+      "yaw": -1.6095378423103281
+    }
+  ],
+  "plans": [
+    {
+      "goal": 1,
+      "path_poses": 88,
+      "planner_status": 4
+    },
+    {
+      "goal": 2,
+      "path_poses": 96,
+      "planner_status": 4
+    },
+    {
+      "goal": 3,
+      "path_poses": 59,
+      "planner_status": 4
+    }
+  ],
+  "message_counts": {
+    "scan": 174,
+    "yolo/detections/image": 23,
+    "sim_ground_truth_pose": 120,
+    "amcl_pose": 16
+  }
+}

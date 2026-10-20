@@ -1,0 +1,15 @@
+# Selected from saved Depot free cells with clearance >0.7 m; return to measured AMCL pose.
+# Paths verified with ComputePathToPose; yaw from final path tangent (radians).
+goals:
+- name: goal_1
+  x: -2.468
+  y: 0.5029999999999992
+  yaw: 1.8925496379082833
+- name: goal_2
+  x: -0.3179999999999996
+  y: 1.553
+  yaw: 0.7853987147417195
+- name: goal_3
+  x: -0.34576305728617357
+  y: 0.006709791735039704
+  yaw: -1.6095378423103281

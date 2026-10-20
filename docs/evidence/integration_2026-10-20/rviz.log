@@ -1,0 +1,22 @@
+[INFO] [1792493274.243401959] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792493274.243559956] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1792493274.306266179] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792493276.677471516] [rviz2]: Trying to create a map of size 604 x 304 using 1 swatches
+[ERROR] [1792493276.711245165] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+rviz/glsl120/indexed_8bit_image.frag
+ GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1792493277.364646082] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 4.770 for reason 'discarding message because the queue is full'
+[INFO] [1792493279.896928981] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 5.505 for reason 'discarding message because the queue is full'
+[INFO] [1792493282.437528768] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 6.240 for reason 'discarding message because the queue is full'
+[INFO] [1792493284.972703501] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 6.963 for reason 'discarding message because the queue is full'
+[INFO] [1792493287.478230384] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 7.683 for reason 'discarding message because the queue is full'
+[INFO] [1792493290.036980633] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 8.448 for reason 'discarding message because the queue is full'
+[INFO] [1792493292.556248555] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 9.186 for reason 'discarding message because the queue is full'
+[INFO] [1792493295.098932574] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 9.891 for reason 'discarding message because the queue is full'
+[INFO] [1792493297.680354827] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 10.338 for reason 'discarding message because the queue is full'
+[INFO] [1792493300.241582711] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 10.896 for reason 'discarding message because the queue is full'
+[INFO] [1792493302.779250019] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 11.571 for reason 'discarding message because the queue is full'
+[INFO] [1792493305.781418793] [rviz2]: Trying to create a map of size 604 x 304 using 1 swatches
+[INFO] [1792493363.398161290] [rviz]: Message Filter dropping message: frame 'turtlebot4/rplidar_link/rplidar' at time 12.099 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1792493528.228700741] [rclcpp]: signal_handler(SIGINT/SIGTERM)

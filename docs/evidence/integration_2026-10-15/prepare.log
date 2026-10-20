@@ -1,0 +1,3 @@
+initial truth geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.001101561264979291, y=-1.3729679331047848e-06, z=-0.004450338615924084), orientation=geometry_msgs.msg.Quaternion(x=-3.6777698490465425e-08, y=-0.0022014734743070067, z=5.7782176082702115e-06, w=0.9999975767376402))
+UNDOCK irobot_create_msgs.action.Undock_GetResult_Response(status=4, result=irobot_create_msgs.action.Undock_Result(is_docked=False))
+INITIAL_POSE_FROM_GAZEBO geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-0.3512484836069569, y=-3.7484197508068267e-06, z=-0.004450036034844408), orientation=geometry_msgs.msg.Quaternion(x=0.0022006059741422747, y=-6.461996841529523e-06, z=0.9999932727875814, w=0.0029345649031336965))

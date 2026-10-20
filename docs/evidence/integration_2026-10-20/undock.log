@@ -1,0 +1,16 @@
+waiting for service to become available...
+requester: making request: irobot_create_msgs.srv.EStop_Request(e_stop_on=False)
+
+response:
+irobot_create_msgs.srv.EStop_Response(success=True, message='Set system E-Stop off, enabling motor power')
+
+Waiting for an action server to become available...
+Sending goal:
+     {}
+
+Goal accepted with ID: 2828f754960548d9acbd06c7b20814a9
+
+Result:
+    is_docked: false
+
+Goal finished with status: SUCCEEDED

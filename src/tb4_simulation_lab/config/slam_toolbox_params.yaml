@@ -1,0 +1,386 @@
+# =============================================================================
+# CẤU HÌNH SLAM TOOLBOX CHO TURTLEBOT 4 - ROS 2 JAZZY
+# =============================================================================
+# SLAM Toolbox là công cụ SLAM 2D dựa trên thuật toán Graph-Based SLAM.
+# Nó xây dựng bản đồ từ dữ liệu LiDAR và odometry, đồng thời định vị
+# robot trong bản đồ đang được tạo.
+#
+# Quy trình hoạt động:
+#   1. Nhận dữ liệu scan từ LiDAR và odometry từ encoder/IMU
+#   2. Thực hiện scan matching để căn chỉnh các scan liên tiếp
+#   3. Xây dựng đồ thị pose (pose graph) từ các ràng buộc
+#   4. Tối ưu hóa đồ thị bằng Ceres Solver
+#   5. Phát hiện loop closure để giảm sai số tích lũy
+#   6. Xuất bản đồ occupancy grid
+# =============================================================================
+
+slam_toolbox:
+  ros__parameters:
+
+    # =========================================================================
+    # THAM SỐ CHUNG (General Parameters)
+    # =========================================================================
+
+    # Sử dụng thời gian mô phỏng thay vì thời gian thực (wall clock).
+    # - true: Dùng trong Gazebo simulation (đồng bộ với /clock topic)
+    # - false: Dùng trên robot thật
+    # Nếu đặt sai, TF sẽ bị lệch thời gian và SLAM sẽ không hoạt động.
+    use_sim_time: true
+
+    # =========================================================================
+    # CẤU HÌNH BỘ GIẢI (Solver Configuration)
+    # =========================================================================
+    # Ceres Solver là thư viện tối ưu hóa phi tuyến của Google, được dùng
+    # để giải bài toán Graph SLAM (tối ưu hóa pose graph).
+
+    # Plugin bộ giải sử dụng. CeresSolver là lựa chọn duy nhất hiện tại
+    # và cũng là bộ giải tốt nhất cho bài toán này.
+    solver_plugin: solver_plugins::CeresSolver
+
+    # Bộ giải hệ phương trình tuyến tính bên trong Ceres:
+    # - SPARSE_NORMAL_CHOLESKY: Hiệu quả cho ma trận thưa (sparse), phù hợp
+    #   với bản đồ lớn vì pose graph thường có cấu trúc thưa.
+    # - Các lựa chọn khác: DENSE_QR (chậm với bản đồ lớn),
+    #   SPARSE_SCHUR (cho bundle adjustment)
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+
+    # Bộ tiền điều kiện (preconditioner) giúp tăng tốc hội tụ:
+    # - SCHUR_JACOBI: Cân bằng tốt giữa tốc độ và độ chính xác,
+    #   phù hợp cho hầu hết các trường hợp SLAM.
+    # - Các lựa chọn khác: JACOBI, IDENTITY
+    ceres_preconditioner: SCHUR_JACOBI
+
+    # Chiến lược trust region để điều khiển bước lặp tối ưu:
+    # - LEVENBERG_MARQUARDT: Chiến lược cổ điển, ổn định, phù hợp cho
+    #   hầu hết bài toán. Chuyển đổi mượt giữa Gauss-Newton và gradient descent.
+    # - DOGLEG: Có thể nhanh hơn trong một số trường hợp
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+
+    # Kiểu thuật toán Dogleg (chỉ có tác dụng khi dùng DOGLEG trust strategy):
+    # - TRADITIONAL_DOGLEG: Thuật toán dogleg truyền thống
+    # - SUBSPACE_DOGLEG: Biến thể tìm kiếm trong không gian con
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+
+    # Hàm loss (robust kernel) để giảm ảnh hưởng của outlier:
+    # - None: Không dùng robust kernel (tin tưởng tất cả dữ liệu)
+    # - HuberLoss: Giảm ảnh hưởng của outlier (nên dùng nếu môi trường
+    #   có nhiều vật thể động gây nhiễu)
+    ceres_loss_function: None
+
+    # =========================================================================
+    # CHẾ ĐỘ HOẠT ĐỘNG (Operation Mode)
+    # =========================================================================
+
+    # Chế độ hoạt động của SLAM Toolbox:
+    # - mapping: Chế độ xây dựng bản đồ mới từ đầu. Robot di chuyển và
+    #   tạo bản đồ realtime. Đây là chế độ chính để tạo bản đồ.
+    # - localization: Chế độ định vị trên bản đồ đã có sẵn (đã serialize).
+    #   Không thêm node mới vào đồ thị, chỉ match scan hiện tại.
+    # - lifelong: Chế độ mapping liên tục, có thể cập nhật bản đồ cũ.
+    mode: mapping
+
+    # =========================================================================
+    # CẤU HÌNH FRAME TF (TF Frame Configuration)
+    # =========================================================================
+    # TF tree cho navigation: map -> odom -> base_link -> [sensors]
+    # SLAM Toolbox cung cấp transform: map -> odom
+    # Odometry source cung cấp: odom -> base_link
+
+    # Frame bản đồ toàn cục - gốc tọa độ cố định của bản đồ.
+    # Tất cả các điểm trên bản đồ được biểu diễn trong frame này.
+    map_frame: map
+
+    # Frame odometry - di chuyển theo robot nhưng có drift theo thời gian.
+    # SLAM Toolbox tính toán transform map->odom để bù sai số odometry.
+    odom_frame: odom
+
+    # Frame gốc của robot - thường đặt ở tâm xoay của robot.
+    # Với TurtleBot 4, base_link nằm ở giữa 2 bánh xe.
+    base_frame: base_link
+
+    # =========================================================================
+    # CẤU HÌNH ĐẦU VÀO (Input Configuration)
+    # =========================================================================
+
+    # Topic chứa dữ liệu quét LiDAR (sensor_msgs/LaserScan).
+    # TurtleBot 4 sử dụng LiDAR 2D RPLIDAR A1M8, publish trên /scan.
+    # Trong simulation, Gazebo plugin cũng publish trên /scan.
+    scan_topic: /scan
+
+    # =========================================================================
+    # CẤU HÌNH SCAN MATCHING (Scan Matching Configuration)
+    # =========================================================================
+
+    # Bật/tắt scan matching - đây là TÍNH NĂNG CỐT LÕI của SLAM.
+    # Scan matching so khớp scan hiện tại với scan trước đó để ước tính
+    # chuyển động chính xác hơn odometry.
+    # - true: Luôn bật để có kết quả SLAM tốt
+    # - false: Chỉ dùng odometry (không chính xác, chỉ để debug)
+    use_scan_matching: true
+
+    # Sử dụng tâm trọng lực (barycenter) của scan để khởi tạo vị trí
+    # scan matching, thay vì dùng vị trí odometry.
+    # - true: Cải thiện scan matching khi odometry kém (khuyến nghị)
+    # - false: Dùng odometry thuần để khởi tạo
+    use_scan_barycenter: true
+
+    # =========================================================================
+    # ĐIỀU KHIỂN TẦN SUẤT VÀ TIMING (Frequency & Timing Control)
+    # =========================================================================
+
+    # Khoảng thời gian tối thiểu giữa 2 lần xử lý scan (giây).
+    # Giảm tải tính toán bằng cách bỏ qua scan nếu chưa đủ thời gian.
+    # - 0.5s: Xử lý tối đa 2 scan/giây, đủ cho TurtleBot 4 di chuyển chậm
+    # - Giảm xuống 0.1-0.3 nếu robot di chuyển nhanh
+    # - Tăng lên 1.0+ nếu CPU yếu
+    minimum_time_interval: 0.5
+
+    # Thời gian chờ tối đa khi tra cứu TF transform (giây).
+    # Nếu transform không có trong thời gian này, scan sẽ bị bỏ qua.
+    # - 0.2s: Phù hợp cho simulation (TF thường ổn định)
+    # - Tăng lên 0.5s nếu TF hay bị trễ trên robot thật
+    transform_timeout: 0.2
+
+    # Thời gian lưu trữ TF buffer (giây). Buffer lưu lại lịch sử transform
+    # để có thể tra cứu transform tại thời điểm trong quá khứ.
+    # - 30s: Đủ cho hầu hết trường hợp
+    # - Tăng nếu có vấn đề "TF extrapolation into the past"
+    tf_buffer_duration: 30.0
+
+    # Kích thước stack cho thread SLAM (bytes).
+    # SLAM Toolbox có thể cần stack lớn khi xử lý bản đồ phức tạp.
+    # - 40000000 (40MB): Đủ cho bản đồ cỡ trung bình đến lớn
+    # - Tăng lên nếu gặp lỗi stack overflow với bản đồ rất lớn
+    stack_size_to_use: 40000000
+
+    # =========================================================================
+    # CHẾ ĐỘ TƯƠNG TÁC (Interactive Mode)
+    # =========================================================================
+
+    # Bật chế độ tương tác cho phép chỉnh sửa bản đồ thủ công qua RViz.
+    # - true: Có thể di chuyển các node trong pose graph bằng tay
+    #   (hữu ích để sửa lỗi bản đồ hoặc thử nghiệm)
+    # - false: Tắt để tiết kiệm tài nguyên trong production
+    enable_interactive_mode: true
+
+    # Bật log debug chi tiết.
+    # - true: In ra nhiều thông tin debug (chỉ dùng khi gỡ lỗi)
+    # - false: Chỉ log thông tin quan trọng (khuyến nghị cho sử dụng thường)
+    debug_logging: false
+
+    # Tỷ lệ throttle scan: chỉ xử lý 1 trong N scan nhận được.
+    # - 1: Xử lý tất cả scan (chất lượng tốt nhất)
+    # - 2-3: Bỏ qua scan xen kẽ (giảm tải CPU nhưng giảm chất lượng)
+    throttle_scans: 1
+
+    # =========================================================================
+    # CẤU HÌNH BẢN ĐỒ (Map Configuration)
+    # =========================================================================
+
+    # Khoảng thời gian cập nhật bản đồ occupancy grid (giây).
+    # Bản đồ được publish dưới dạng nav_msgs/OccupancyGrid trên topic /map.
+    # - 2.0s: Cập nhật mỗi 2 giây, cân bằng giữa realtime và tải CPU
+    # - Giảm xuống 0.5-1.0 nếu cần bản đồ cập nhật nhanh hơn
+    # - Tăng lên 5.0+ nếu CPU yếu
+    map_update_interval: 2.0
+
+    # Độ phân giải bản đồ (mét/pixel).
+    # Mỗi ô (cell) trong occupancy grid có kích thước này.
+    # - 0.05m (5cm): Tiêu chuẩn cho navigation trong nhà
+    # - 0.02-0.03m: Chi tiết hơn nhưng tốn bộ nhớ gấp 4-6 lần
+    # - 0.10m: Thô hơn, tiết kiệm bộ nhớ, phù hợp bản đồ lớn
+    resolution: 0.05
+
+    # Tầm quét tối đa của LiDAR (mét) được sử dụng trong SLAM.
+    # Các điểm quét xa hơn giá trị này sẽ bị bỏ qua.
+    # - 20.0m: Phù hợp cho RPLIDAR A1M8 (tầm quét thực tế ~12m)
+    #   Đặt cao hơn tầm thực tế để không mất dữ liệu.
+    # - Giảm xuống nếu muốn bỏ qua đo xa kém chính xác
+    max_laser_range: 12.0
+
+    # =========================================================================
+    # ĐIỀU KIỆN THÊM NODE MỚI (New Node Insertion Criteria)
+    # =========================================================================
+    # Robot chỉ thêm node (scan) mới vào pose graph khi đã di chuyển
+    # đủ xa HOẶC xoay đủ nhiều. Điều này tránh thêm quá nhiều node
+    # trùng lặp gây lãng phí bộ nhớ và tính toán.
+
+    # Khoảng cách di chuyển tối thiểu (mét) trước khi thêm scan mới.
+    # - 0.10m (10cm): Đủ dày cho bản đồ chi tiết trong nhà
+    # - 0.3-0.5m: Tiết kiệm bộ nhớ cho bản đồ lớn
+    minimum_travel_distance: 0.10
+
+    # Góc xoay tối thiểu (radian) trước khi thêm scan mới.
+    # - 0.10 rad (~5.7°): Đủ chi tiết cho các góc cua
+    # - 0.3-0.5 rad: Ít node hơn, bản đồ thô hơn
+    minimum_travel_heading: 0.10
+
+    # =========================================================================
+    # CẤU HÌNH SCAN BUFFER (Scan Buffer Configuration)
+    # =========================================================================
+    # Scan buffer nhóm nhiều scan liên tiếp thành một "super scan"
+    # để tăng độ tin cậy khi matching.
+
+    # Số lượng scan tối đa trong buffer.
+    # - 10: Nhóm 10 scan thành 1 super scan
+    # - Tăng lên cho scan matching ổn định hơn (tốn RAM hơn)
+    scan_buffer_size: 10
+
+    # Khoảng cách di chuyển tối đa (mét) để các scan còn trong cùng buffer.
+    # Nếu robot di chuyển xa hơn giá trị này, buffer sẽ được flush.
+    # - 10.0m: Đủ rộng để nhóm scan khi di chuyển liên tục
+    scan_buffer_maximum_scan_distance: 10.0
+
+    # =========================================================================
+    # CẤU HÌNH SCAN MATCHING CHI TIẾT (Detailed Scan Matching)
+    # =========================================================================
+
+    # Ngưỡng response tối thiểu khi matching fine (chính xác).
+    # Response là chỉ số đánh giá chất lượng match (0-1, càng cao càng tốt).
+    # - 0.1: Ngưỡng thấp, chấp nhận match chất lượng vừa phải
+    # - Tăng lên 0.3-0.5 nếu muốn chỉ chấp nhận match chất lượng cao
+    #   (có thể gây mất match ở môi trường ít đặc trưng)
+    link_match_minimum_response_fine: 0.1
+
+    # Khoảng cách tối đa (mét) giữa 2 scan liên tiếp để tạo link (ràng buộc).
+    # - 1.5m: Chỉ tạo ràng buộc giữa các scan gần nhau
+    # - Tăng lên nếu robot di chuyển nhanh giữa các scan
+    link_scan_maximum_distance: 1.5
+
+    # =========================================================================
+    # CẤU HÌNH LOOP CLOSURE (Loop Closure Configuration)
+    # =========================================================================
+    # Loop closure là quá trình phát hiện robot quay lại vị trí đã đi qua
+    # trước đó. Khi phát hiện, nó thêm ràng buộc mới vào pose graph
+    # và tối ưu lại toàn bộ, giúp sửa sai số tích lũy từ odometry.
+    # Đây là tính năng QUAN TRỌNG NHẤT để có bản đồ chính xác.
+
+    # Khoảng cách tìm kiếm tối đa (mét) cho loop closure.
+    # Tìm các node cũ trong bán kính này quanh vị trí hiện tại.
+    # - 3.0m: Tìm kiếm trong phạm vi 3m, phù hợp cho indoor
+    # - Tăng lên 5-8m cho môi trường lớn hơn
+    loop_search_maximum_distance: 3.0
+
+    # Bật/tắt loop closure.
+    # - true: LUÔN BẬT để có bản đồ chính xác
+    # - false: Tắt chỉ khi debug hoặc mapping một chiều (không quay lại)
+    do_loop_closing: true
+
+    # Số lượng scan tối thiểu trong chuỗi (chain) để xác nhận loop closure.
+    # Chuỗi dài hơn = ít false positive nhưng khó phát hiện loop closure hơn.
+    # - 10: Cần ít nhất 10 scan khớp liên tiếp để xác nhận
+    # - Giảm xuống 3-5 nếu loop closure khó phát hiện
+    loop_match_minimum_chain_size: 10
+
+    # Ngưỡng response tối thiểu cho loop closure ở bước coarse (thô).
+    # Bước coarse tìm kiếm nhanh với độ phân giải thấp.
+    # - 0.35: Ngưỡng vừa phải, cân bằng giữa phát hiện và false positive
+    # - Giảm xuống 0.2 nếu loop closure bị miss nhiều
+    # - Tăng lên 0.5 nếu có quá nhiều false positive
+    loop_match_minimum_response_coarse: 0.35
+
+    # Ngưỡng response tối thiểu cho loop closure ở bước fine (chính xác).
+    # Bước fine kiểm tra lại kết quả coarse với độ phân giải cao.
+    # - 0.45: Cao hơn coarse để lọc bỏ match kém
+    loop_match_minimum_response_fine: 0.45
+
+    # =========================================================================
+    # KHÔNG GIAN TÌM KIẾM CORRELATION (Correlation Search Space)
+    # =========================================================================
+    # Cấu hình không gian tìm kiếm cho scan matching thông thường
+    # (giữa các scan liên tiếp, KHÔNG phải loop closure).
+
+    # Kích thước không gian tìm kiếm (mét) - bán kính tìm kiếm.
+    # - 0.5m: Tìm match trong phạm vi ±0.5m quanh vị trí ước tính
+    # - Tăng lên nếu odometry kém (drift lớn)
+    correlation_search_space_dimension: 0.5
+
+    # Độ phân giải tìm kiếm (mét) - bước nhảy trong không gian tìm kiếm.
+    # - 0.01m (1cm): Tìm kiếm chi tiết, chính xác cao
+    # - Tăng lên 0.02-0.05 để tăng tốc (giảm chính xác)
+    correlation_search_space_resolution: 0.01
+
+    # Độ lệch chuẩn Gaussian smearing (mét) cho correlation.
+    # Làm mờ (smear) bản đồ tham chiếu để tăng khả năng match.
+    # - 0.1m: Giá trị mặc định, tạo vùng chấp nhận rộng vừa phải
+    # - Tăng lên nếu scan matching hay fail ở môi trường đơn giản
+    correlation_search_space_smear_deviation: 0.1
+
+    # =========================================================================
+    # KHÔNG GIAN TÌM KIẾM LOOP CLOSURE (Loop Search Space)
+    # =========================================================================
+    # Cấu hình không gian tìm kiếm CHỈ cho loop closure.
+    # Thường lớn hơn correlation search vì vị trí ước tính khi
+    # quay lại có thể sai nhiều do drift tích lũy.
+
+    # Kích thước không gian tìm kiếm loop closure (mét).
+    # - 8.0m: Tìm kiếm trong phạm vi rộng vì drift có thể lớn
+    # - Giảm xuống 3-5m cho bản đồ nhỏ hoặc odometry tốt
+    # - Tăng lên 10-15m cho bản đồ lớn
+    loop_search_space_dimension: 8.0
+
+    # Độ phân giải tìm kiếm loop closure (mét).
+    # - 0.05m (5cm): Thô hơn correlation search vì không gian lớn hơn
+    # - Cân bằng giữa tốc độ tìm kiếm và độ chính xác
+    loop_search_space_resolution: 0.05
+
+    # Độ lệch chuẩn smearing cho loop closure.
+    # - 0.03m: Nhỏ hơn correlation để giảm false positive
+    loop_search_space_smear_deviation: 0.03
+
+    # =========================================================================
+    # HÀM PHẠT (Penalty Functions)
+    # =========================================================================
+    # Các hàm phạt giúp SLAM ưu tiên các match có vị trí và góc
+    # gần với ước tính từ odometry.
+
+    # Phạt dựa trên phương sai khoảng cách.
+    # Giá trị cao = phạt mạnh khi match xa vị trí ước tính.
+    # - 0.5: Phạt vừa phải cho khoảng cách
+    distance_variance_penalty: 0.5
+
+    # Phạt dựa trên phương sai góc.
+    # - 1.0: Phạt mạnh hơn cho góc (thường quan trọng hơn khoảng cách)
+    angle_variance_penalty: 1.0
+
+    # =========================================================================
+    # CẤU HÌNH TÌM KIẾM GÓC (Angular Search Configuration)
+    # =========================================================================
+
+    # Offset tìm kiếm góc cho bước fine (radian).
+    # - 0.00349 rad (~0.2°): Phạm vi tìm kiếm rất hẹp cho matching chính xác
+    fine_search_angle_offset: 0.00349
+
+    # Offset tìm kiếm góc cho bước coarse (radian).
+    # - 0.349 rad (~20°): Phạm vi tìm kiếm rộng cho bước thô
+    # - Tăng lên nếu robot xoay nhiều giữa các scan
+    coarse_search_angle_offset: 0.349
+
+    # Độ phân giải góc cho bước coarse (radian).
+    # - 0.0349 rad (~2°): Bước nhảy góc trong tìm kiếm thô
+    # - Nhỏ hơn = chính xác hơn nhưng chậm hơn
+    coarse_angle_resolution: 0.0349
+
+    # =========================================================================
+    # NGƯỠNG PHẠT TỐI THIỂU (Minimum Penalty Thresholds)
+    # =========================================================================
+
+    # Phạt góc tối thiểu - match phải đạt ít nhất ngưỡng này.
+    # - 0.9: Yêu cầu cao (góc phải gần khớp), giúp tránh match sai
+    # - Giảm xuống 0.7-0.8 nếu scan matching hay fail
+    minimum_angle_penalty: 0.9
+
+    # Phạt khoảng cách tối thiểu.
+    # - 0.5: Yêu cầu vừa phải cho khoảng cách
+    minimum_distance_penalty: 0.5
+
+    # =========================================================================
+    # MỞ RỘNG RESPONSE (Response Expansion)
+    # =========================================================================
+
+    # Bật mở rộng response khi tìm kiếm match.
+    # Khi bật, nếu match ban đầu có response thấp, SLAM sẽ thử mở rộng
+    # không gian tìm kiếm để tìm match tốt hơn.
+    # - true: Tăng khả năng tìm match (tốn CPU hơn một chút)
+    # - false: Chỉ dùng kết quả match đầu tiên
+    use_response_expansion: true

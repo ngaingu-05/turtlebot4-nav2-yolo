@@ -1,0 +1,10 @@
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 45
+    nanosec: 807000000
+  frame_id: base_link
+detections: []
+---

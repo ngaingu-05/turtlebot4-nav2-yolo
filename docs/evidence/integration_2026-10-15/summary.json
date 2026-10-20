@@ -1,0 +1,53 @@
+{
+  "separate_nodes": {
+    "status": "PASS",
+    "goals_succeeded_in_order": [
+      1,
+      2,
+      3
+    ],
+    "wall_elapsed_s": 110.50019693374634
+  },
+  "combined_launch": {
+    "status": "PASS",
+    "goals_succeeded_in_order": [
+      1,
+      2,
+      3
+    ],
+    "wall_elapsed_s": 146.04444074630737
+  },
+  "monitor": {
+    "wall_duration_s": 433.00623123499963,
+    "message_counts": {
+      "sim_ground_truth_pose": 5308,
+      "oakd/rgb/preview/image_raw": 2891,
+      "scan": 5964,
+      "tf": 15791,
+      "yolo/detections/image": 805,
+      "odom": 5908,
+      "amcl_pose": 103,
+      "cmd_vel": 4236
+    },
+    "amcl_truth_position_error_m": {
+      "samples": 103,
+      "median": 0.06082566346712964,
+      "max": 0.13684185470058174
+    }
+  },
+  "initial_amcl_error_m": 0.008669574576109652,
+  "chair_detection_combined": {
+    "status": "PASS",
+    "logged_observations": 18,
+    "maximum_confidence": 0.87,
+    "fixture": "static OpenRobotics Chair added after first navigation run"
+  },
+  "negative_tests": {
+    "missing_model": "PASS",
+    "missing_camera": "PASS"
+  },
+  "gui_smoke": {
+    "status": "PASS",
+    "note": "show_window=true on desktop; timeout intentionally sent SIGINT after 25 seconds"
+  }
+}
