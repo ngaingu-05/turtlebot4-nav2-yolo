@@ -51,6 +51,8 @@ story.append(Paragraph('BÁO CÁO THỰC HÀNH<br/>TURTLEBOT 4',styles['TitleVN'
 p('<b>Định vị trên bản đồ có sẵn, điều hướng tự động bằng Nav2 và nhận diện vật thể bằng YOLO</b>')
 p('Ngày thực nghiệm: <b>20/10/2026</b> · Múi giờ Việt Nam (UTC+7).<br/>Môi trường: Ubuntu 24.04, ROS 2 Jazzy, Gazebo Harmonic, TurtleBot 4 Standard, world Depot.')
 p('Họ và tên: <b>Nguyễn Minh Nghĩa</b><br/>Mã sinh viên: <b>23020755</b><br/>Lớp / Nhóm: <b>K68 E RE</b>')
+p('GitHub: <link href="https://github.com/ngaingu-05/turtlebot4-nav2-yolo" color="#0077b6"><u>github.com/ngaingu-05/turtlebot4-nav2-yolo</u></link><br/>Google Drive: <link href="https://drive.google.com/drive/u/1/folders/1KpX5KTfOAgTgpQlJO7Gp-5q5eNcDs8VM" color="#0077b6"><u>Thư mục nộp bài và tài liệu</u></link>')
+
 heading('Kết quả thực nghiệm')
 p(f"Chuỗi navigation: <b>{'ĐẠT — 3/3 goal thành công đúng thứ tự' if all_ok else 'CHƯA ĐẠT'}</b>. Thời gian từ gửi Goal 1 đến kết quả Goal 3: <b>{summary['elapsed_wall_s']:.2f} giây thực</b>.")
 p(f"AMCL: sai lệch vị trí ban đầu so với ground truth Gazebo <b>{loc['initial_position_error_m']*1000:.2f} mm</b>. YOLO: {len(chairs)} lần ghi log có nhãn chair; độ tin cậy cao nhất <b>{max(chairs) if chairs else 0:.2f}</b>.")
