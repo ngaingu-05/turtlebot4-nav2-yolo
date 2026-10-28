@@ -9,3 +9,5 @@ Link Drive xuất hiện trong báo cáo PDF Nav2/YOLO cũ và trong
 [script tạo báo cáo cũ](../evidence/integration_2026-10-20/create_report.py).
 Đây là **link thư mục cũ**, chưa xác nhận chứa video Bài 6.
 Khi có video mới, điền `video_drive_url` trong `submission.json` rồi tạo lại PDF.
+
+- **Báo cáo Bài 6 theo mẫu tuần trước:** [PDF](../reports/Bao_cao_TurtleBot4_Cu_chi_tay_Bai6.pdf)

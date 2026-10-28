@@ -3,8 +3,8 @@
   "student_id": "23020755",
   "video_drive_url": null,
   "public_repository_url": "https://github.com/ngaingu-05/turtlebot4-nav2-yolo/tree/assignment-6-hand-gesture",
-  "tested_public_commit": null,
-  "status": "Source prepared on assignment-6-hand-gesture; full live-hand demo video pending",
+  "tested_public_commit": "7cc106c6d05418c5ab69619041d1c4cbaa637a64",
+  "status": "Public assignment branch; report styled after the previous week; full live-hand video pending",
   "branch": "assignment-6-hand-gesture",
   "previous_assignment_drive_folder_url": "https://drive.google.com/drive/u/1/folders/1KpX5KTfOAgTgpQlJO7Gp-5q5eNcDs8VM"
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="511.27559055118115" height="175" preserveAspectRatio="xMinYMin meet" viewBox="0 0 511 175" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="511.27559055118115" height="175"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-175)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="85" width="104" height="55" rx="5" ry="5" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(89%,94%,95%); fill-rule: evenodd;"/>
+			<text x="20.5703125" y="115.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,231) scale(1,-1)">Webcam laptop</text>
+			<text x="34.298828125" y="102.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,205) scale(1,-1)">Ảnh RGB</text>
+			<rect x="123" y="85" width="122" height="55" rx="5" ry="5" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(89%,94%,95%); fill-rule: evenodd;"/>
+			<text x="144.107421875" y="121.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,243) scale(1,-1)">gesture_recognition</text>
+			<text x="141.35546875" y="108.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,217) scale(1,-1)">OpenCV + MediaPipe</text>
+			<text x="146.896484375" y="95.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,191) scale(1,-1)">+ nhận diện Wave</text>
+			<rect x="264" y="85" width="122" height="55" rx="5" ry="5" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(89%,94%,95%); fill-rule: evenodd;"/>
+			<text x="294.796875" y="121.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,243) scale(1,-1)">robot_behavior</text>
+			<text x="290.076171875" y="108.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,217) scale(1,-1)">Chọn → Xác nhận</text>
+			<text x="282.408203125" y="95.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,191) scale(1,-1)">Điều khiển + an toàn</text>
+			<rect x="405" y="85" width="106" height="55" rx="5" ry="5" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(89%,94%,95%); fill-rule: evenodd;"/>
+			<text x="435.66015625" y="115.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,231) scale(1,-1)">TurtleBot 4</text>
+			<text x="422.337890625" y="102.5" style="font-family: DV; font-size: 8px;fill: rgb(7%,21%,29%); stroke:none;" transform="translate(0,205) scale(1,-1)">Gazebo Harmonic</text>
+			<path d="M 104,112 L 123,112 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="123 112, 118 115, 118 109" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<path d="M 245,112 L 264,112 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="264 112, 259 115, 259 109" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<path d="M 386,112 L 405,112 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="405 112, 400 115, 400 109" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<text x="203.005859375" y="151" style="font-family: DV; font-size: 8px;fill: rgb(32%,38%,41%); stroke:none;" transform="translate(0,302) scale(1,-1)">/detected_gesture: String</text>
+			<text x="380.078125" y="151" style="font-family: DV; font-size: 8px;fill: rgb(32%,38%,41%); stroke:none;" transform="translate(0,302) scale(1,-1)">/cmd_vel</text>
+			<path d="M 457,85 L 457,40 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 457,40 L 325,40 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="325 40, 330 43, 330 37" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<path d="M 325,40 L 325,85 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="325 85, 322 80, 328 80" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<text x="371.8671875" y="23" style="font-family: DV; font-size: 8px;fill: rgb(32%,38%,41%); stroke:none;" transform="translate(0,46) scale(1,-1)">/scan + /clock</text>
+			<path d="M 285,85 L 285,62 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 285,62 L 184,62 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="184 62, 189 65, 189 59" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<path d="M 184,62 L 184,85 Z" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<polygon points="184 85, 181 80, 187 80" style="stroke: rgb(0%,42%,46%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,42%,46%); fill-rule: evenodd;"/>
+			<text x="195.8046875" y="44" style="font-family: DV; font-size: 8px;fill: rgb(32%,38%,41%); stroke:none;" transform="translate(0,88) scale(1,-1)">/behavior_status</text>
+		</g>
+	</g>
+</svg>
