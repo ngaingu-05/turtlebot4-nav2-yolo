@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "synthetic": true,
+  "cmd_messages": 241,
+  "checks": [
+    "selection requires confirmation",
+    "circle velocity",
+    "immediate palm stop",
+    "signal timeout",
+    "fist cancel",
+    "obstacle stop",
+    "stale scan stop"
+  ]
+}

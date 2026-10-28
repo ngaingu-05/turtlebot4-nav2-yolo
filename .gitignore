@@ -13,3 +13,7 @@ __pycache__/
 *.bag
 *.db3
 *.mcap
+
+.pytest_cache/
+
+/dist/

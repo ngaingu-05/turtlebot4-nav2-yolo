@@ -1,0 +1,17 @@
+{
+  "scan": {
+    "count": 640,
+    "finite": 0,
+    "minimum": null,
+    "nan": 0
+  },
+  "position": [
+    0.06454729978698348,
+    -2.413386712514205e-13
+  ],
+  "status": "RUNNING: back_forth",
+  "cmd": [
+    0.12,
+    0.0
+  ]
+}

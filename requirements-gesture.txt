@@ -1,0 +1,6 @@
+mediapipe==0.10.21
+numpy<2
+opencv-contrib-python==4.11.0.86
+# Avoid expensive resolver backtracking against newer JAX releases requiring NumPy 2.
+jax==0.4.38
+jaxlib==0.4.38
